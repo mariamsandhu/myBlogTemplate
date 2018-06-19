@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>index</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+     	<div class="container">
+     		<div class="navbar-header">
+     			<a href="" class="navbar-brand">CMS system</a>
+     		</div>
+     		<div class="nav navbar-nav navbar-right">
+     			<li><a href="index.html">Home</a></li>
+     			<li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">Mariam<span class="caret"></span></a>
+     				<ul class="dropdown-menu">
+     					<li><a href="#">Profile</a></li>
+     					<li><a href="#">Logout</a></li>
+     				</ul>
+     			</li>
+     		</div>
+     	</div>
+     </nav>
+     <div class="container-fluid">
+          <div class="col-md-3">
+               <ul class="navbar navbar-default" style="height: 100vh;">
+                        <li><a href="index.html"><span class="glyphicon glyphicon-dashboard"></span> Dashboard</a></li>
+                        <li><a href="#new"><span class="glyphicon glyphicon-plus"></span> New Item</a>
+                            <ul class="nav collapse" id="new">
+                                   
+                                <li><a href="#"><div class="col-md-1"></div><span class="glyphicon glyphicon-pencil"></span> Write post</a></li>
+                                <li><a href="#"><div class="col-md-1"></div><span class="glyphicon glyphicon-edit"></span> Write category</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="posts.html"><span class="glyphicon glyphicon-list"></span> Posts</a></li>
+                        <li><a href="category.html"><span class="glyphicon glyphicon-tasks"></span> Categories</a></li>
+               </ul>
+          </div>
+         <div class="col-md-9"> 
+             <div class="page-header">
+                <h2>New post</h2>
+             </div>
+             <form>
+                <div class="form-group">
+                  <label>Select image</label>
+                   <input type="file" class="form-control">
+                <div class="form-group">
+                   <label>Title</label>
+                   <input type="text" multiple class="form-control">
+                </div>
+                <div class="form-group">
+                   <label>Category</label>
+                   <input type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label>Description</label>
+                  <textarea class="form-control"></textarea>
+                </div>
+                <div class="form-group">
+                  <button class="btn btn-danger">Insert new post</button>
+             </form>
+         </div>
+     </div>
+</body>
+</html>
